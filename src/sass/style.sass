@@ -1,8 +1,8 @@
 @import "vars"
-
+@import "fonts"
 
 body
-        font-family: sans-serif
+       +reg
 
 img
         max-width: 100%
@@ -41,6 +41,7 @@ img
                 font-size: 13px
                 font-weight: 400
         &__phone
+                +bold
                 font-size: 20px
                 font-weight: 400
                 color: $accent
@@ -52,6 +53,7 @@ img
                 border-radius: 10px
                 margin-left: 30px
                 font-size: 13px
+                +bold
 
 .main
         background-color: $grey
@@ -66,6 +68,7 @@ img
                 @media (max-width:1200px)
                        margin-bottom: 30px
                 &__title
+                        +bold
                         font-size: 41px
                         color: $accent
                         padding-right: 200px
