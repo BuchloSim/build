@@ -11,17 +11,18 @@
 <body>
     
     <header class="header">
-        <div class="container">
+        <div class="conteiner">
             <div class="header-block">
                 <div class="header__logo">
                     <img src="img/logo.png" alt="logo">
                 </div>
-                <div class="header__info"></div>
-                <div class="header__contacts">
-                    <span class="header__adress">Praha</span>
-                    <a href="tel:+420777167699" class="header__phone">+420 777 167 699</a>
+                <div class="header__info">
+                    <div class="header__contacts">
+                        <span class="header__adress">Praha</span>
+                        <a href="tel:+420777167699" class="header__phone">+420 777 167 699</a>
+                    </div>
+                    <button class="button header__button" id="button">Zavolejte mi</button>
                 </div>
-                <button class="button header__button">Zavolejte mi</button>
             </div>
         </div>
     </header>
@@ -44,13 +45,13 @@
                                 </div>
                                 <span class="main-list__text">Přesně dodržujeme termíny</span>
                             </li>
-                            <li class="main__item">
+                            <li class="main-list__item">
                                 <div class="main-list__image">
                                     <img src="img/calculator.png" alt="Kalkulačka">
                                 </div>
                                 <span class="main-list__text">Vypočítáme náklady práce a materiálů ve stejný den poptávky</span>
                             </li>
-                            <li class="main__item">
+                            <li class="main-list__item">
                                 <div class="main-list__image">
                                     <img src="img/paint.png" alt="Paleta">
                                 </div>
@@ -65,5 +66,38 @@
             </div>
         </div>
     </main>
+
+    <section class="offer">
+        <div class="conteiner">
+            <div class="offer-block">
+                <h2 class="offer-title">Bezplatně vypracujeme 
+                    design-projekt pro Váš domov
+                    a realizujeme ho!
+                    </h2>
+                <span class="offer-subtitle">Zanechte poptávku pro vypracování bezplatného design-projektu!
+                    </span>
+
+                <form action="#" class="form offer__form">
+                    <input type="text" class="input offer__input" placeholder="Vaše jméno">
+                    <input type="tel" class="input offer__input" placeholder="Váš telefon">  
+                    <button class="button offer__button">Získejte bezplatný design-projekt
+                    </button> 
+                </form>
+
+                <div class="offer-text">
+                    <div class="offer-text-info">
+                        <span class="offer-text__text">Náš manažer vám zavolá v průběhu 60 sekund</span>
+                        <div class="offer-text-info__contakts">
+                            <span class="offer-text__call">nebo nám zavolejte sami</span>
+                            <a href="tel:+420777167699" class="offer-text__phone">+420 777 167 699</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
 </body>
 </html>
