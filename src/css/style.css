@@ -176,7 +176,7 @@ img {
 }
 .main-list {
   margin: 40px 0 0 0;
-  padding: 0 250px 0 0;
+  padding: 0 0 0 0;
 }
 @media (max-width: 640px) {
   .main-list {
@@ -474,6 +474,117 @@ img {
   left: 0;
   z-index: -1;
   transition: 0.2s;
+}
+
+.steps {
+  padding-bottom: 120px;
+}
+@media (max-width: 1080px) {
+  .steps {
+    padding-bottom: 78px;
+  }
+}
+.steps__title {
+  margin-bottom: 60px;
+}
+@media (max-width: 1080px) {
+  .steps__title {
+    margin-bottom: 27px;
+  }
+}
+@media (max-width: 780px) {
+  .steps__title {
+    font-size: 18px;
+  }
+}
+.steps__subtitle {
+  margin-bottom: 75px;
+}
+@media (max-width: 1080px) {
+  .steps__subtitle {
+    margin-bottom: 37px;
+  }
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1080px) {
+  .icons {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.icon {
+  align-items: center;
+  position: relative;
+}
+.icon:last-child::after {
+  display: none;
+}
+.icon::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 72px;
+  height: 25px;
+  background-image: url("../img/icon_arrow_right.png");
+  right: -95px;
+  top: -10px;
+}
+@media (max-width: 1080px) {
+  .icon::after {
+    display: none;
+  }
+}
+.icon__image {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border: 3px solid #ffd200;
+  background-color: #fff;
+  border-radius: 100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 30px;
+}
+.icon__image img {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+.icon__text {
+  max-width: 140px;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+}
+@media (max-width: 1080px) {
+  .icon__text {
+    margin-bottom: 30px;
+  }
+}
+
+.notice {
+  background-color: #ffc000;
+  padding: 100px 0;
+}
+.notice__text {
+  text-align: center;
+  font-size: 32px;
+  max-width: 750px;
+  margin: auto;
+  line-height: 50px;
+  font-weight: 300;
+}
+@media (max-width: 780px) {
+  .notice__text {
+    font-size: 18px;
+    margin: 73px 27px;
+  }
 }
 
 .modal {
