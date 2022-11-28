@@ -418,6 +418,59 @@ img
                 @media (max-width:780px)
                         font-size: 18px
                         margin: 73px 27px
+.info
+        padding: 100px
+        @media (max-width:1400px)
+                padding: 60px
+        &__block
+                margin-bottom: 150px
+                @media (max-width:1400px)
+                        flex-direction: column
+                        align-items: center
+                        
+
+.benefits
+        display: flex
+        justify-content: space-between
+       
+.benefits-block
+        &__text
+                @media (max-width:1400px)
+                margin-top: 60px
+.benefit
+        background-clip: $benefit-bg
+        height: 410px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        max-width: 370px
+        position: relative
+        &__image
+                position: absolute
+                bottom: 0
+                left: 0
+        &__text
+                margin: 26px 100px 0 26px
+                font-size: 16px
+                line-height: 23px
+                strong
+                        +bold
+.dokuments__title
+        margin-bottom: 100px
+
+.documents-block
+        display: flex
+        justify-content: space-between
+        @media (max-width:1400px)
+                flex-direction: column
+                text-align: center
+        &__text
+                text-align: center
+                margin-top: 40px
+                line-height: 24px
+                font-size: 18px
+                @media (max-width:1400px)
+                        margin: 30px 0 44px 0
 
 .modal
         position: fixed
