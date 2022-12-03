@@ -1,5 +1,23 @@
 $(document).ready(function(){
 
+  //Validace formulařů
+
+  $('#brief-form').validate({
+    rules:{
+    username: "required",
+    email:{
+        required: true,
+        email: true
+    }
+  },
+
+  messages: {
+    email: "Uveďte Váš e-mail ",
+    username: "Uveďte Vaše jméno",
+    phone: "Uveďte Váš telefon"
+  }
+
+  });
 
   //Napojení knihovny wow.js
   new WOW().init();
@@ -15,6 +33,7 @@ $(document).ready(function(){
     close.on('click', function(){
         modal.removeClass('modal_active')
     });
+
 
     //Napojení slideru
     
@@ -38,5 +57,5 @@ $(document).ready(function(){
               },
         ]
     });
-
+ 
 });

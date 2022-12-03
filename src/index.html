@@ -67,7 +67,7 @@
                 </div>
             </div>
         </div>
-    </main>
+
 
     <section class="offer">
         <div class="conteiner">
@@ -321,12 +321,105 @@
                     </div>
                 </div>
             </div>
-
-
-
         </div>
-
     </section>
+
+    <section class="brief">
+        <div class="conteiner">
+            <div class="brief-block">
+                <div class="interview brief__interview">
+                   <h3 class="interviw__title">Můžeme Vám sdělit přibližnou cenu
+                    práce a materiálů po telefonu</h3>
+                    <span class="interview__subtitle">K tomu musíte odpovědět na 4 otázky:</span>
+                    <ul class="interview-list">
+                        <li class="interview-list__item">
+                            <span class="interview-list__counter">1.</span>
+                            <span class="interview-list__text">Jaká je plocha místnosti?
+                            </span>
+                        </li>
+
+                        <li class="interview-list__item">
+                            <span class="interview-list__counter">2.</span>
+                            <span class="interview-list__text">Máte novou budovu nebo starší bydlení?
+                            </span>
+                        </li>
+
+                        <li class="interview-list__item">
+                            <span class="interview-list__counter">3.</span>
+                            <span class="interview-list__text">Kde se nachazí místnost, ve které budou
+                                probíhat opravy?
+                            </span>
+                        </li>
+
+                        <li class="interview-list__item">
+                            <span class="interview-list__counter">4.</span>
+                            <span class="interview-list__text">Účel místnosti?
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="form brief__form" id="brief-form">
+                    <h3 class="form__title">
+                        Zanechte poptávku na bezplatný výpočet renovace po telefonu</h3>
+                    <span class="form__subtitle">Vyplňte níže uvedený formulář</span>
+                    <form action="#" class="form">
+                        <input type="text" name="username" class="input brief__input" placeholder="Vaše jméno">
+                        <input type="text" name="phone" class="input brief__input" placeholder="Váš telefon">
+                        <input type="text" name="email" class="input brief__input" placeholder="Váš e-mail">
+                        <button class="button brief__button">Vypočítat náklady</button>
+                        <span class="form__description"> Zavoláme vám nazpět do 60 sekund</span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+    <div class="footer">
+        <div class="map" id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.05807060261!2d14.450041615635831!3d50.085199621496415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b949f25df712b%3A0xfeb8d30581d5761a!2zxaB0w610bsOpaG8gMjg1LzI5LCAxMzAgMDAgUHJhaGEgMy3FvWnFvmtvdg!5e0!3m2!1scs!2scz!4v1670072092531!5m2!1scs!2scz" width="100%" height="640" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="conteiner" >
+            <div class="contacts-block">
+                <div class="contacts">
+                    <h3 class="contacts__title">
+                        Přijďte nás navštívit!! Poradíme vám se všemi otázkami ohledně oprav</h3>
+                        <ul class="contacts-list">
+                            <li class="cotacts-list__item">
+                                <span class="contacts-list__icon">
+                                    <img src="img/ic1.png" alt="Mapa">
+                                </span>
+                                <span class="contacts-list__text">
+                                Praha<br><strong>
+                                Štítného 285/29,<br>
+                                130 00 Praha 3-Žižkov, Czechia</strong>
+                                </span>
+                            </li>
+
+                            <li class="cotacts-list__item">
+                                <span class="contacts-list__icon">
+                                    <img src="img/ic2.png" alt="Hodiny">
+                                </span>
+                                <span class="contacts-list__text">
+                                Pracovní doba:<br>
+                                <strong> od 9:00 do 18:00</strong>
+                                </span>
+                            </li>
+
+                            <li class="cotacts-list__item">
+                                <span class="contacts-list__icon">
+                                    <img src="img/ic3.png" alt="Telefon">
+                                </span>
+                                <span class="contacts-list__text">
+                                Telefon:<br>    
+                                <strong> <a tel:+420777167699>+ 420 777 167 699</a></strong>
+                                </span>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="modal" id="modal">
         <div class="modal-dialog">
@@ -339,6 +432,7 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
 
 </body>

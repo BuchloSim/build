@@ -632,7 +632,8 @@ img {
   font-size: 16px;
   line-height: 23px;
 }
-.benefit__text strong {
+
+.benefits-block__text strong {
   font-family: "Museo Sans Bold", sans-serif;
   font-weight: 700;
 }
@@ -663,6 +664,228 @@ img {
   }
 }
 
+.brief {
+  background-image: url("../img/brief-color-bg.jpg"), url("../img/brief-bg.jpg");
+  background-position: left center, center right;
+  background-size: 50%, cover;
+  background-repeat: repeat-y, no-repeat;
+  padding: 100px 0;
+}
+@media (max-width: 768px) {
+  .brief {
+    background-image: url("../img/brief-color-bg.jpg"), url("../img/brief-bg.jpg");
+    background-position: top center, center bottom;
+    background-size: 100% 50%, cover;
+    background-repeat: repeat-x, no-repeat;
+    padding: 50px;
+  }
+}
+.brief-block {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .brief-block {
+    flex-direction: column;
+  }
+}
+.brief__interview {
+  flex-basis: 50%;
+}
+.brief__form {
+  flex-basis: 50%;
+  padding-left: 200px;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  .brief__form {
+    padding-left: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .brief__form {
+    padding-left: 0;
+  }
+}
+.brief__input {
+  width: 100%;
+  max-width: 370px;
+  margin-bottom: 15px;
+}
+.brief__button {
+  width: 100%;
+  max-width: 370px;
+  display: block;
+  height: 70px;
+  margin: 15px auto 30px auto;
+}
+.brief__description {
+  font-size: 15px;
+}
+@media (max-width: 1200px) {
+  .brief__description {
+    margin-top: 30px;
+  }
+}
+
+.interview {
+  padding-right: 70px;
+}
+@media (max-width: 1200px) {
+  .interview {
+    padding-right: 30px;
+  }
+}
+.interview__title {
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 50px;
+}
+@media (max-width: 1200px) {
+  .interview__title {
+    font-size: 18px;
+    margin-bottom: 38px;
+  }
+}
+.interview__subtitle {
+  font-size: 16px;
+  margin-bottom: 100px;
+  display: block;
+}
+@media (max-width: 1200px) {
+  .interview__subtitle {
+    font-size: 14px;
+    margin-bottom: 67px;
+  }
+}
+.interview-list {
+  list-style-type: none;
+  padding: 0;
+}
+@media (max-width: 1200px) {
+  .interview-list {
+    margin-bottom: 80px;
+  }
+}
+.interview-list__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
+}
+.interview-list__counter {
+  width: 35px;
+  font-size: 14px;
+  height: 35px;
+  border: 2px solid #000;
+  display: inline-block;
+  line-height: 35px;
+  border-radius: 50px;
+  margin-right: 30px;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  .interview-list__counter {
+    margin-right: 20px;
+  }
+}
+.interview-list__text {
+  max-width: 400px;
+  font-size: 18px;
+}
+@media (max-width: 1200px) {
+  .interview-list__text {
+    font-size: 14px;
+    max-width: 300px;
+  }
+}
+
+.form__title {
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 50px;
+}
+@media (max-width: 1200px) {
+  .form__title {
+    font-size: 18px;
+    margin-bottom: 27px;
+    margin-top: 60px;
+  }
+}
+.form__subtitle {
+  font-size: 16px;
+  margin-bottom: 50px;
+  display: block;
+}
+@media (max-width: 1200px) {
+  .form__subtitle {
+    font-size: 14px;
+    margin-bottom: 35px;
+  }
+}
+
+.footer {
+  position: relative;
+}
+
+.map {
+  width: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.contacts {
+  flex-basis: 50%;
+  padding-top: 100px;
+  padding-left: 200px;
+}
+.contacts-block {
+  display: flex;
+  justify-content: flex-end;
+}
+.contacts__title {
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  margin-bottom: 100px;
+}
+.contacts-list {
+  padding: 0;
+  list-style-type: none;
+}
+.contacts-list__icon {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  margin-right: 20px;
+}
+.contacts-list__items {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+.contacts-list__text {
+  line-height: 1.4;
+}
+.contacts-list__text strong {
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
+}
+.contacts-list__text a {
+  color: #000;
+  text-decoration: none;
+}
+.contacts-list__text a:hover {
+  text-decoration: underline;
+}
+
 .modal {
   position: fixed;
   left: 0;
@@ -688,4 +911,8 @@ img {
   position: absolut;
   right: 0;
   top: 0;
+}
+
+.error {
+  border: 2px solid red;
 }/*# sourceMappingURL=style.css.map */
