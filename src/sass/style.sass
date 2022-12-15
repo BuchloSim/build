@@ -226,9 +226,7 @@ img
                         @media (max-width:1230px)
                                 margin-right: 0
                                 padding-bottom: 20px
-                               
-                                
-                                                                        
+                                                                                          
                 &__call
                         font-size: 15px
                         font-weight: 400
@@ -464,7 +462,7 @@ img
         &-block
                 display: flex
                 justify-content: space-between
-                @media (max-width:1400px)
+                @media (max-width:1200px)
                         flex-direction: column
                         text-align: center
                 &__text
@@ -474,6 +472,7 @@ img
                         font-size: 18px
                         @media (max-width:1400px)
                                 margin: 30px 0 44px 0
+        
 
 .brief
         background-image: url('../img/brief-color-bg.jpg'), url('../img/brief-bg.jpg')
@@ -588,23 +587,39 @@ img
                         margin-bottom: 35px
 .footer
         position: relative
-  
+        display: flex
+        flex-wrap: wrap
 
+.footer-right
+        @media (max-width:960px)
+                width: 100%
+                order: 0
+                
 .map
         width: 50%
         position: absolute
         left: 0
         top: 0
+        @media (max-width:960px)
+                width: 100%
+                position: relative
+                order: 1
               
+                
 
 .contacts
         flex-basis: 50%
         padding-top: 100px
         padding-left: 200px 
-
+        @media (max-width:960px)
+                padding-top: 50px
+                padding-left: 100px
+               
         &-block
                 display: flex
                 justify-content: flex-end
+                @media (max-width:960px)
+                        justify-content: center
         &__title
                 +bold
                 font-size: 24px

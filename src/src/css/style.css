@@ -830,6 +830,8 @@ img {
 
 .footer {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .map {
@@ -842,6 +844,7 @@ img {
   .map {
     width: 100%;
     position: relative;
+    order: 1;
   }
 }
 
